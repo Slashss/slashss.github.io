@@ -6,81 +6,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Web</title>
     <link rel="stylesheet" href="css/main.css">
+    <style>
+        
+        .bubble-img {
+            animation: movete 6s ease-in-out forwards infinite alternate;
+          
+        }
+        .burbu-img {
+            animation: movete 4s ease-in-out forwards infinite alternate;
+          
+        }
+        .buble-img {
+            animation: movete 5s ease-in-out forwards infinite alternate;
+          
+        }
+        
+        .brect {
+          
+          animation: redes 3s ease-in-out forwards ;
+          z-index: -1;
+
+          
+        }
+        .srect {
+          
+          animation: redes 3.5s ease-in-out forwards ;
+          z-index: -1;
+
+          
+        }
+        .git-img {
+          
+          animation: redes1 6s ease-in-out forwards ;
+          z-index: -1;
+
+          
+        }
+        .insta-img {
+          
+          animation: redes1 6s ease-in-out forwards ;
+          z-index: -1;
+
+          
+        }
+        .termi-img {
+          
+          animation: redes1 6s ease-in-out forwards ;
+          z-index: -1;
+
+          
+        }
+        .light-img{
+            z-index: -10;
+        }
+
+        
+        @keyframes movete {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateY(30%);
+            }
+               
+        }
+        @keyframes redes {
+            0% {
+                transform: translateX(-200%);
+            }
+            50% {
+                transform: translateX(0);
+            }
+               
+        }
+        @keyframes redes1 {
+            0% {
+                opacity: 0%;
+            }
+            50% {
+                opacity: 100%;
+            }
+               
+        }
+
+        
+      </style>
 </head>
 <body>
-    <div class="navbar">
+    
+    <section class="navbar">
+        
         <div class="container">
-            <a class="logo" href="#">Fisher</a>
+            <a class="logo" href="#">My<span>Fish<span></a>
 
             <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
 
             <nav>
                 <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
                 <ul class="primary-nav">
-                    <li class="current"><a href="#">Home</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Pricing</a></li>
+                    
+                    <li><a href="#">My Work</a></li>
+                    <li><a href="#">Projects</a></li>
+                    
                 </ul>
                 
                 <ul class="secondary-nav">
-                    <li><a href="#">Contact</a></li>
-                    <li class="go-premium-cta"><a href="#">Go Premium</a></li>
+
+                    <li class="go-premium-cta"><a href="#">About me</a></li>
                 </ul>
             </nav>
         </div>
-
-    </div>
+    </section>
 
     <section class="hero">
         <div class="container">
+            
             <div class="left-col">
-                <p class="subhead">It's Nityy &amp; Gritty</p>
-                <h1>Fresh Fish</h1>
+                <h1>Never Stop Dreaming</h1>
+                <p class="subhead">Follow your dreams</p>
+                <p class="subhead1">For the best experience press    <span>   F11</span></p>
 
-                <div class="hero-cta">
-                    <a href="#" class="primary-cta">try for Free</a>
-                    <a href="#" class="watch-video-cta"> Watch a video </a>
-                </div>
+            
             </div>
-            <img src="images/Fish.svg" class="hero-img" alt="Illustration">
-        </div>
+            <img src="Ellipse 2.svg" class="bubble-img" alt="Ilustration">
+            <img src="Ellipse 2.svg" class="burbu-img" alt="Ilustration">
+            <img src="Ellipse 2.svg" class="buble-img" alt="Ilustration">
+            <img src="Fish.svg" class="hero-img" alt="Illustration">
+            
+            <img src="instagram.svg" class="insta-img" alt="Illustration">
+            <img src="github.svg" class="git-img" alt="Illustration">
+            <img src="windowsterminal.svg" class="termi-img" alt="Illustration">
+            <img src="Rectangle 5.svg" class="brect" alt="Illustration">
+            <img src="Rectangle 6.svg" class="srect" alt="Illustration">
+            
+            
+        </div>   
     </section>
-
+    
     <section class="features-section">
         <div class="container">
-            <ul class="features-list">
-                <li>Fresh</li>
-                <li>Modern</li>
-                <li>Awesome</li>
-                <li>Recommended</li>
-            </ul>
 
-            <img src="images/Fish2.0.jpg" alt="Man holding phone">
+            <img src="light.png" class="light-img" alt="Illustration">
+            
+            
         </div>
     </section>
 
     <section class="testimonials-section">
         <div class="container">
-            <ul>
-                <li>
-                    <img src="images/old.jpg" alt="Person">
-
-                    <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</blockquote>
-                    <cite> Jame Doe</cite>
-                </li>
-                <li>
-                    <img src="images/old.jpg" alt="Person">
-
-                    <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</blockquote>
-                    <cite> Jame Doe</cite>
-                </li>
-                <li>
-                    <img src="images/old.jpg" alt="Person">
-
-                    <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</blockquote>
-                    <cite> Jame Doe</cite>
-                </li>
-            </ul>
+            <img src="dark.png" class="dark-img" alt="Illustration">
         </div>
 
     </section>
@@ -101,13 +175,12 @@
                 </form>
 
             </div>
-            <div class="contact-right">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d175814.64703252882!2d9.666867829840145!3d46.486255842137275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478482076dc01a7b%3A0x279fdbbd3ec97825!2sSt%20Moritz%2C%20Switzerland!5e0!3m2!1sen!2ses!4v1630249243586!5m2!1sen!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+            
 
         </div>
     </section>
-
+    <div class="parent">
+        <div class="child">
     <script>
 
         const mobileBtn = document.getElementById('mobile-cta')
