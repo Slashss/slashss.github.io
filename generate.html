@@ -1,0 +1,145 @@
+<html>
+  <head>
+    
+    <style>
+      html, body {
+        max-width: 100%;
+        overflow: hidden;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", sans-serif;  
+        
+
+        
+      }
+      img, picture, svg, video {
+        display: block;
+        max-width: 100%;
+      }
+      /*Add some styling for the taskbar */
+      .taskbar {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        background-color: #DCDCDC;
+        color: #000;
+        height: 5%;
+        width: 100%;
+      }
+      .taskbar a {
+        color: #000;
+        text-decoration: none;
+        margin: 0 4%;
+        text-align: center;
+        font-size: 13px;
+       
+
+      }
+      .logo {
+        color: #000;
+        font-weight: bold;
+        font-size: 14px;
+        margin: 0 3%;
+        padding-right: 19%;
+        text-align: center;
+        
+      }
+      /* Add some styling for the body */
+      .body {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 18.48%;
+        margin-top: 5%;
+
+      }
+      .body h1 {
+        font-size: 30px;
+        margin-bottom: 15.28%;
+        line-height: 60%;
+        font-weight: 600;
+
+      }
+      .body button {
+        cursor: pointer;
+        background: linear-gradient(100deg, #3E16B0, #E794E3);
+        border: none;
+        border-radius: 50px;
+        color: #fff;
+        font-size: 22px;
+        height: 22%;
+        width: 55%;
+        font-weight: bold;
+
+        
+      }
+      .body h2 {
+        color: #999;
+        font-size: 15px;
+        margin-top: 13%;
+        line-height: 90%;
+        font-weight: lighter;
+        
+      }
+      .body img {
+        height: 400px;
+        margin-right: 20px;
+        margin-left: -40%;
+        border-radius: 3%;
+      }
+      .body svg {
+        margin-top: -50%;
+        margin-left: -22%;
+        position: absolute;
+        z-index: -1;
+      }
+      video{
+      margin: 0;
+      margin-left: -10em; 
+      margin-top: 0em; 
+      width: 32em;
+      height: 18em;
+      
+     
+    }
+    </style>
+  </head>
+  <body>
+    <!-- Add the taskbar -->
+    <div class="taskbar">
+      <a class="logo" href="index.html">VirtualAvatar</a>
+      <a href="#">Explore</a>
+      <a href="generate.html">Generate</a>
+      <a href="#">About</a>
+    </div>
+    <!-- Add the body -->
+    <div class="body">
+      <div>
+        <h1>Time to Create!</h1>
+        <h2>- Open the <b><span style="color:#3E16B0">VirtualAvatar Google Collab</span> </b> notebook by clicking the button<br></br>
+
+- Click on the <b> <span style="color:#E794E3">"Runtime"</span> </b> dropdown menu in the top menu bar<br></br>
+
+- Select <b><span style="color: #3E16B0;">"Run all"</span> </b> from the dropdown menu<br></br>
+
+- Click the <b> <span style="color:#E794E3">"Run all"</span> </b> button in the pop-up window to confirm<br></br>
+
+- Click in the cell which allows you to upload your photo<br></br>
+
+- Now you just have to Wait for the algorithm to finish<br></br>
+
+- The results will be saved in the <b> <span style="color:#E794E3">results directory</span> </b> (See location in video)
+        </h2>
+        <br></br>
+        <button onclick="window.open('https://colab.research.google.com/drive/16u1h8FhJGxFH7N1yoC89Wo8Fcg9Io8Kc');">Open Google Collab</button>
+
+        
+      </div>
+      <div>
+        <video src="steps.mp4" controls=""></video>
+
+      </div>
+    </div>
+  </body>
+</html>

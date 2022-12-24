@@ -1,157 +1,131 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <title>3D Model Creator</title>
-  <style>
-    /* Add some style to make the website look modern and dark-themed */
-    body {
-      margin: 0;
-      background-color: #262626;
-      color: white;
-      font-family: sans-serif;
-    }
-    .taskbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #fff;
-      padding: 0.5em;
-    }
-    .taskbar a {
-      color: black;
-      font-size: 1.3em;
-      text-decoration: none;
-      margin-right: 2em;
-      margin-left: 2em;
-    }
-
+  <head>
     
-    .body {
-      margin: 7em;
-    }
-    
-    .body h1{
-      font-size: 5em;
-    }
-    
-    .body p{
-      color: #CAE6EE;
-      font-size: 1.3em;
-    }
-      /* Add some style to make the button look modern */
-    .start-button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 200px;
-      height: 50px;
-      background-color: #DE425D;
-      color: white;
-      font-size: 18px;
-      font-weight: bold;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      margin-top: 20em;
-      margin-left: 47.5em;
-    }
-    .start-button:hover {
-      background-color: #273147;
+    <style>
+      html, body {
+        max-width: 100%;
+        overflow: hidden;
+      }
       
-    }
-    .start2-button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 200px;
-      height: 50px;
-      background-color: #DE425D;
-      color: white;
-      font-size: 18px;
-      font-weight: bold;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      margin-top: -17em;
-      margin-bottom: 10em;
-      margin-left: 47.5em;
-    }
-    .start2-button:hover {
-      background-color: #273147;
-      
-    }
-    img {
-    float: right;
-    margin-right: 5em;
-    margin-top: -20em;
-     
-    }
-    /* Add some style to make the geometry elements look modern */
-    svg {
-      margin-left: 70em;
-      width: 30%;
-      height: auto;
-    }
-    path {
-      fill: none;
-      stroke: #333;
-      stroke-width: 2px;
-    }
-    section {
-      margin: 7em;
-      margin-top: 10em;
-    }
-    section p{
-      font-size: 22px;
-      margin-bottom: 20em;     
-    }
-    section h2{
-      font-size: 35px;
-
-    }
-    section img{
-
-      margin-top: -23em;
-      margin-left: -7em;
-      margin-right: -7em;
-      margin-bottom: 4em;
-
-
-
-    }
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", sans-serif;  
+        
 
         
-  </style>
-</head>
-<body>
-  <div class="taskbar">
-    <a href="index.html">Virtual Avatar</a>
-    <a href="#">MyCreations</a>
-    <a href="#">Discover</a>
-    <a href="#">Log In</a>
-  </div>
-  <div class="body">
-    <h1>Welcome to <br> VirtualAvatar!</h1>
-    <p>Upload a photo of a person and we'll create a 3D model for you</p>
-    
-  </div>
-  <img src="example.jpg" alt="A description of the image" width="500" height="500">
-  <button onclick="location.href = 'Create.html';" class="start-button">Start</button>
+      }
+      img, picture, svg, video {
+        display: block;
+        max-width: 100%;
+      }
+      /*Add some styling for the taskbar */
+      .taskbar {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        background-color: #DCDCDC;
+        color: #000;
+        height: 5%;
+        width: 100%;
+      }
+      .taskbar a {
+        color: #000;
+        text-decoration: none;
+        margin: 0 4%;
+        text-align: center;
+        font-size: 13px;
+       
 
-  <section>
-  <h2>Conversion Method</h2>
-  <p>Recent advances in image-based 3D human shape estimation have been driven <br> by the significant improvement in representation power afforded by deep neural networks. <br> Although current approaches have demonstrated the potential in real world settings, <br> they still fail to produce reconstructions with the level of detail often present in the input images.</p>
-  <img src="explanation.png" alt="A description of the image" width="1920em" height="350em"> 
-  
-  <p>A coarse level observes the whole
-image at lower resolution and focuses on holistic reasoning.
-This provides context to an fine level which estimates highly
-detailed geometry by observing higher-resolution images. We demonstrate that our approach significantly outperforms
-existing state-of-the-art techniques on single image human
-shape reconstruction by fully leveraging 1k-resolution input
-images.
-</p>
-</section>
-<button onclick="location.href = 'Create.html';" class="start2-button" >Start</button>
-</body>
+      }
+      .logo {
+        color: #000;
+        font-weight: bold;
+        font-size: 14px;
+        margin: 0 3%;
+        padding-right: 19%;
+        text-align: center;
+        
+      }
+      /* Add some styling for the body */
+      .body {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 18.48%;
+        margin-top: 5%;
+
+      }
+      .body h1 {
+        font-size: 30px;
+        margin-bottom: 15.28%;
+        line-height: 60%;
+        font-weight: 600;
+
+      }
+      .body button {
+        cursor: pointer;
+        background: linear-gradient(100deg, #3E16B0, #E794E3);
+        border: none;
+        border-radius: 50px;
+        color: #fff;
+        font-size: 32px;
+        height: 22%;
+        width: 55%;
+        font-weight: bold;
+
+        
+      }
+      .body h2 {
+        color: #999;
+        font-size: 18px;
+        margin-top: 13%;
+        line-height: 70%;
+        font-weight: lighter;
+        
+      }
+      .body img {
+        height: 400px;
+        margin-right: 20px;
+        margin-left: -40%;
+        border-radius: 3%;
+      }
+      .body svg {
+        margin-top: -50%;
+        margin-left: -22%;
+        position: absolute;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Add the taskbar -->
+    <div class="taskbar">
+      <a class="logo" href="index.html">VirtualAvatar</a>
+      <a href="#">Explore</a>
+      <a href="generate.html">Generate</a>
+      <a href="#">About</a>
+    </div>
+    <!-- Add the body -->
+    <div class="body">
+      <div>
+        <h1>Create your Virtual Avatar<br></br> for Free</h1>
+        <button onclick="location.href = 'generate.html';">START</button>
+
+        <h2>Using cutting-edge AI technology, we are<br></br> able to generate your 3D model<br></br> in minutes.</h2>
+      </div>
+      <div>
+        <img src="example.jpg" alt="Example avatar">
+        <svg width="1500" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M684.405 130.275C750.165 198.09 807.705 250.15 854.285 314.54C900.865 378.93 935.8 454.965 930.32 527.575C924.155 600.185 877.575 670.055 816.61 708.415C755.645 747.46 679.61 755.68 619.33 820.755C559.735 886.515 514.525 1009.82 449.45 1045.44C384.375 1080.37 298.75 1028.31 215.18 976.25C132.295 924.19 52.1499 871.445 46.6699 796.78C41.1899 722.8 110.375 626.9 94.6199 522.095C78.8649 417.29 -21.8301 302.895 4.88489 265.905C31.5999 228.23 186.41 267.275 285.05 218.64C383.69 169.32 426.845 32.32 485.755 5.60503C543.98 -21.11 617.96 62.46 684.405 130.275Z" fill="url(#paint0_linear_17_10)"/>
+<defs>
+<linearGradient id="paint0_linear_17_10" x1="4.26539e-06" y1="255.5" x2="685.5" y2="740" gradientUnits="userSpaceOnUse">
+<stop stop-color="#5521B6"/>
+<stop offset="1" stop-color="#F8BBED"/>
+</linearGradient>
+</defs>
+</svg>
+
+      </div>
+    </div>
+  </body>
 </html>
