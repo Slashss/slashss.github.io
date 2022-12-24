@@ -1,205 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5053016142094144"
-     crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Web</title>
-    <link rel="stylesheet" href="css/main.css">
-    <style>
+  <title>3D Model Creator</title>
+  <style>
+    /* Add some style to make the website look modern and dark-themed */
+    body {
+      margin: 0;
+      background-color: #262626;
+      color: white;
+      font-family: sans-serif;
+    }
+    .taskbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;
+      padding: 0.5em;
+    }
+    .taskbar a {
+      color: black;
+      font-size: 1.3em;
+      text-decoration: none;
+      margin-right: 2em;
+      margin-left: 2em;
+    }
+
+    
+    .body {
+      margin: 7em;
+    }
+    
+    .body h1{
+      font-size: 5em;
+    }
+    
+    .body p{
+      color: #CAE6EE;
+      font-size: 1.3em;
+    }
+      /* Add some style to make the button look modern */
+    .start-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 200px;
+      height: 50px;
+      background-color: #DE425D;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20em;
+      margin-left: 47.5em;
+    }
+    .start-button:hover {
+      background-color: #273147;
+      
+    }
+    .start2-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 200px;
+      height: 50px;
+      background-color: #DE425D;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: -17em;
+      margin-bottom: 10em;
+      margin-left: 47.5em;
+    }
+    .start2-button:hover {
+      background-color: #273147;
+      
+    }
+    img {
+    float: right;
+    margin-right: 5em;
+    margin-top: -20em;
+     
+    }
+    /* Add some style to make the geometry elements look modern */
+    svg {
+      margin-left: 70em;
+      width: 30%;
+      height: auto;
+    }
+    path {
+      fill: none;
+      stroke: #333;
+      stroke-width: 2px;
+    }
+    section {
+      margin: 7em;
+      margin-top: 10em;
+    }
+    section p{
+      font-size: 22px;
+      margin-bottom: 20em;     
+    }
+    section h2{
+      font-size: 35px;
+
+    }
+    section img{
+
+      margin-top: -23em;
+      margin-left: -7em;
+      margin-right: -7em;
+      margin-bottom: 4em;
+
+
+
+    }
+
         
-        .bubble-img {
-            animation: movete 6s ease-in-out forwards infinite alternate;
-          
-        }
-        .burbu-img {
-            animation: movete 4s ease-in-out forwards infinite alternate;
-          
-        }
-        .buble-img {
-            animation: movete 5s ease-in-out forwards infinite alternate;
-          
-        }
-        
-        .brect {
-          
-          animation: redes 3s ease-in-out forwards ;
-          z-index: -1;
-
-          
-        }
-        .srect {
-          
-          animation: redes 3.5s ease-in-out forwards ;
-          z-index: -1;
-
-          
-        }
-        .git-img {
-          
-          animation: redes1 6s ease-in-out forwards ;
-          z-index: -1;
-
-          
-        }
-        .insta-img {
-          
-          animation: redes1 6s ease-in-out forwards ;
-          z-index: -1;
-
-          
-        }
-        .termi-img {
-          
-          animation: redes1 6s ease-in-out forwards ;
-          z-index: -1;
-
-          
-        }
-        .light-img{
-            z-index: -10;
-        }
-
-        
-        @keyframes movete {
-            0% {
-                transform: translateX(0);
-            }
-            50% {
-                transform: translateY(30%);
-            }
-               
-        }
-        @keyframes redes {
-            0% {
-                transform: translateX(-200%);
-            }
-            50% {
-                transform: translateX(0);
-            }
-               
-        }
-        @keyframes redes1 {
-            0% {
-                opacity: 0%;
-            }
-            50% {
-                opacity: 100%;
-            }
-               
-        }
-
-        
-      </style>
+  </style>
 </head>
 <body>
+  <div class="taskbar">
+    <a href="index.html">Virtual Avatar</a>
+    <a href="#">MyCreations</a>
+    <a href="#">Discover</a>
+    <a href="#">Log In</a>
+  </div>
+  <div class="body">
+    <h1>Welcome to <br> VirtualAvatar!</h1>
+    <p>Upload a photo of a person and we'll create a 3D model for you</p>
     
-    <section class="navbar">
-        
-        <div class="container">
-            <a class="logo" href="#">My<span>Fish<span></a>
+  </div>
+  <img src="example.jpg" alt="A description of the image" width="500" height="500">
+  <button onclick="location.href = 'Create.html';" class="start-button">Start</button>
 
-            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
-
-            <nav>
-                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
-                <ul class="primary-nav">
-                    
-                    <li><a href="#">My Work</a></li>
-                    <li><a href="#">Projects</a></li>
-                    
-                </ul>
-                
-                <ul class="secondary-nav">
-
-                    <li class="go-premium-cta"><a href="#">About me</a></li>
-                </ul>
-            </nav>
-        </div>
-    </section>
-
-    <section class="hero">
-        <div class="container">
-            
-            <div class="left-col">
-                <h1>Never Stop Dreaming</h1>
-                <p class="subhead">Follow your dreams</p>
-                <p class="subhead1">For the best experience press    <span>   F11</span></p>
-
-            
-            </div>
-            <img src="Ellipse 2.svg" class="bubble-img" alt="Ilustration">
-            <img src="Ellipse 2.svg" class="burbu-img" alt="Ilustration">
-            <img src="Ellipse 2.svg" class="buble-img" alt="Ilustration">
-            <img src="Fish.svg" class="hero-img" alt="Illustration">
-            
-            <img src="instagram.svg" class="insta-img" alt="Illustration">
-            <img src="github.svg" class="git-img" alt="Illustration">
-            <img src="windowsterminal.svg" class="termi-img" alt="Illustration">
-            <img src="Rectangle 5.svg" class="brect" alt="Illustration">
-            <img src="Rectangle 6.svg" class="srect" alt="Illustration">
-            
-            
-        </div>   
-    </section>
-    
-    <section class="features-section">
-        <div class="container">
-
-            <img src="light.png" class="light-img" alt="Illustration">
-            
-            
-        </div>
-    </section>
-
-    <section class="testimonials-section">
-        <div class="container">
-            <img src="dark.png" class="dark-img" alt="Illustration">
-            <a href="Stilized_bedroom.png" download>Download link</a>
-        </div>
-
-    </section>
-
-    <section class="contact-section">
-        <div class="container">
-            <div class="contact-left">
-                <h2>Contact</h2>
-
-                <form action="">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name">
-
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-
-                    <input type="submit" class="send-message-cta" value="Send message">
-                </form>
-
-            </div>
-            
-
-        </div>
-    </section>
-    <div class="parent">
-        <div class="child">
-    <script>
-
-        const mobileBtn = document.getElementById('mobile-cta')
-                nav = document.querySelector('nav')
-                mobileBtnExit = document.getElementById('mobile-exit');
-
-        mobileBtn.addEventListener('click', () => {
-            nav.classList.add('menu-btn');
-        })
-
-        mobileBtnExit.addEventListener('click', () => {
-            nav.classList.remove('menu-btn');
-        })
-
-
-    </script>
-
+  <section>
+  <h2>Conversion Method</h2>
+  <p>Recent advances in image-based 3D human shape estimation have been driven <br> by the significant improvement in representation power afforded by deep neural networks. <br> Although current approaches have demonstrated the potential in real world settings, <br> they still fail to produce reconstructions with the level of detail often present in the input images.</p>
+  <img src="explanation.png" alt="A description of the image" width="1920em" height="350em"> 
+  
+  <p>A coarse level observes the whole
+image at lower resolution and focuses on holistic reasoning.
+This provides context to an fine level which estimates highly
+detailed geometry by observing higher-resolution images. We demonstrate that our approach significantly outperforms
+existing state-of-the-art techniques on single image human
+shape reconstruction by fully leveraging 1k-resolution input
+images.
+</p>
+</section>
+<button onclick="location.href = 'Create.html';" class="start2-button" >Start</button>
 </body>
 </html>
