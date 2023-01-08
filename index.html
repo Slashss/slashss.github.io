@@ -1,131 +1,419 @@
 <html>
-  <head>
-    
-    <style>
-      html, body {
-        max-width: 100%;
-        overflow: hidden;
-      }
+<head>
+  <title>Shopify - Ecommerce for everyone</title>
+  <style type="text/css">* {
+box-sizing: border-box;
+
+}
+body {
+font-family: "Georgia", serif;
+margin: 0;
+}
+
+.header-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 5px;
+font-size: 12px;
+}
+
+.logo {
+font-size: 24px;
+font-weight: 500;
+color: #333;
+text-decoration: none;
+padding-left: 7px;
+}
+
+.main-nav {
+display: flex;
+}
+
+.main-nav a {
+margin-left: 20px;
+font-size: 15px;
+color: #333;
+text-decoration: none;
+}
+
+.header-cta {
+display: flex;
+}
+
+.button {
+display: inline-block;
+padding: 10px 20px;
+background-color: #333;
+color: #fff;
+text-decoration: none;
+border-radius: 5px;
+margin-right: 7px;
+}
+
+.secondary {
+background-color: #fff;
+color: #333;
+border: 1px solid #333;
+
+}
+
+.hero {
+display: flex;
+align-items: center;
+padding: 100px 100px;
+background: url(bg.jpg) no-repeat center center fixed;
+background-size: cover;
+}
+
+.hero-text {
+width: 50%;
+}
+
+.hero-text h1 {
+font-size: 58px;
+font-weight: bold;
+margin-bottom: 20px;
+color: white;
+text-shadow: 4px 2px 4px #000000;
+
+}
+
+.hero-text p {
+font-size: 18px;
+line-height: 1.5;
+margin-bottom: 40px;
+color: whitesmoke;
+}
+
+.hero-image {
+width: 90%;
+text-align: right;
+}
+
+.hero-image img {
+max-width: 500px;
+}
+
+.features {
+display: flex;
+align-items: center;
+padding: 100px 20px;
+background-color: #101010;
+}
+
+.feature {
+width: 33%;
+text-align: center;
+color: #f7f7f7;
+
+}
+
+.feature img {
+max-width: 80%;
+margin-bottom: 20px;
+box-shadow: 3px 4px 5px 2px #00000080;
+
+}
+
+.feature h2 {
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+.feature p {
+font-size: 18px;
+line-height: 1.5;
+}
+
+.testimonials {
+padding: 10px 0px;
+background-color: #ececec;
+}
+.testimonials h2{
+font-size: 3em;
+text-align: center;
+margin-bottom: 1em;
+}
+
+#wh{
+color: white;
+}
+
+.testimonial {
+display: flex;
+align-items: center;
+margin: 70px;
+margin-bottom: 40px;
+box-shadow: 3px 4px 5px 2px #00000012;
+
+}
+#n1 {
+  background-color: whitesmoke;
+}
+#n2 {
+  background-color: #101010;
+}
+#n3 {
+  background-color: white;
+}
+
+.testimonial img {
+width: 30%;
+border-radius: 1080px;
+margin-right: 20px;
+}
+
+.testimonial p {
+font-size: 20px;
+line-height: 1.5;
+margin-bottom: 10px;
+padding-left: 6em;
+padding-right: 2em;
+}
+
+.testimonial h3{
+font-size: 2em;
+font-weight: bold;
+}
+
+.pricing {
+padding: 100px 20px;
+padding-top: 1px;
+background-color: #f7f7f7;
+}
+.pricing h2{
+padding: 20px 10px;
+}
+
+.pricing-options {
+display: flex;
+justify-content: space-between;
+}
+
+.pricing-option {
+width: 30%;
+text-align: center;
+padding: 50px;
+background-color: white;
+box-shadow: 3px 4px 5px 2px #00000012;
+}
+
+.pricing-option h3 {
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+.pricing-option .price {
+font-size: 48px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+.pricing-option ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.pricing-option li {
+font-size: 18px;
+line-height: 1.5;
+margin-bottom: 10px;
+font-style: italic;
+}
+
+.cta {
+display: flex;
+align-items: center;
+padding: 100px 20px;
+background-color: #101010;
+color: #fff;
+}
+
+.cta-text {
+width: 50%;
+}
+
+.cta-text h2 {
+font-size: 48px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+.cta-text p {
+font-size: 18px;
+line-height: 1.5;
+margin-bottom: 40px;
+}
+
+.cta-form {
+width: 50%;
+text-align: right;
+}
+
+.cta-form form {
+display: flex;
+}
+
+.cta-form input[type="email"] {
+width: 60%;
+margin-right: 20px;
+padding: 10px;
+border: 1px solid #fff;
+border-radius: 5px;
+}
+
+.cta-form input[type="submit"] {
+width: 40%;
+padding: 10px;
+background-color: #fff;
+color: #333;
+text-decoration: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+footer {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+background-color: #333;
+color: #fff;
+}
+
+.footer-links a {
+margin-left: 20px;
+font-size: 18px;
+color: #fff;
+text-decoration: none;
+}
+
+.social-links a img {
+width: 40px;
+height: 40px;
+margin-left: 20px;
+}
+@media (max-width: 980px) {
+  .testimonial p {
+    font-size: 18px; /* smaller font size for smaller screens */
+  }
+}
+
+
+
+</style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="https://www.shopify.com/" class="logo">Yves Saint Laurent</a>
+      <nav class="main-nav">
+        <a href="#">Discover</a>
+        <a href="#">Pricing</a>
+        <a href="#">Fragances</a>
+      </nav>
+      <div class="header-cta">
+        <a href="#" class="button">Buy Now</a>
+        <a href="#" class="button secondary">Sign in</a>
+      </div>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>True Spirit</h1>
+      <p>Capture the esence of elegance and sophiticatness, embrace your True Spirit, by Ivs Saint Laurent</p>
+      <a href="#" class="button">Buy Now</a>
+    </div>
+    <div class="hero-image">
+      <img src="Perfum1.png" alt="Hero image">
+    </div>
+  </section>
+  <section class="features">
+    <div class="feature">
+      <img src="https://images.unsplash.com/photo-1516233758813-a38d024919c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=60" alt="Feature 1">
+      <h2>Embrace</h2>
+    </div>
+    <div class="feature">
+      <img src="https://images.unsplash.com/photo-1495395226200-8fbf6b720b8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=397&q=80" alt="Feature 2">
+      <h2>Your</h2>
+    </div>
+    <div class="feature">
+      <img src="https://images.unsplash.com/photo-1583396060233-3d13dbadf242?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="Feature 3">
+      <h2>True Spirit</h2>
+    </div>
+  </section>
+  <section class="testimonials">
+    <h2>Discover our New Fragances</h2>
+    <div class="testimonial" id="n1">
+      <img src="Perfum3.png" alt="Testimonial 1">
       
-      * {
-        margin: 0;
-        padding: 0;
-        font-family: "Segoe UI", sans-serif;  
-        
-
-        
-      }
-      img, picture, svg, video {
-        display: block;
-        max-width: 100%;
-      }
-      /*Add some styling for the taskbar */
-      .taskbar {
-        margin: 0;
-        display: flex;
-        align-items: center;
-        background-color: #DCDCDC;
-        color: #000;
-        height: 5%;
-        width: 100%;
-      }
-      .taskbar a {
-        color: #000;
-        text-decoration: none;
-        margin: 0 4%;
-        text-align: center;
-        font-size: 13px;
-       
-
-      }
-      .logo {
-        color: #000;
-        font-weight: bold;
-        font-size: 14px;
-        margin: 0 3%;
-        padding-right: 19%;
-        text-align: center;
-        
-      }
-      /* Add some styling for the body */
-      .body {
-        display: flex;
-        justify-content: space-between;
-        margin-left: 18.48%;
-        margin-top: 5%;
-
-      }
-      .body h1 {
-        font-size: 30px;
-        margin-bottom: 15.28%;
-        line-height: 60%;
-        font-weight: 600;
-
-      }
-      .body button {
-        cursor: pointer;
-        background: linear-gradient(100deg, #3E16B0, #E794E3);
-        border: none;
-        border-radius: 50px;
-        color: #fff;
-        font-size: 32px;
-        height: 22%;
-        width: 55%;
-        font-weight: bold;
-
-        
-      }
-      .body h2 {
-        color: #999;
-        font-size: 18px;
-        margin-top: 13%;
-        line-height: 70%;
-        font-weight: lighter;
-        
-      }
-      .body img {
-        height: 400px;
-        margin-right: 20px;
-        margin-left: -40%;
-        border-radius: 3%;
-      }
-      .body svg {
-        margin-top: -50%;
-        margin-left: -22%;
-        position: absolute;
-        z-index: -1;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Add the taskbar -->
-    <div class="taskbar">
-      <a class="logo" href="index.html">VirtualAvatar</a>
-      <a href="#">Explore</a>
-      <a href="generate.html">Generate</a>
-      <a href="#">About</a>
+      <h3>True Spirit</h3>
+      <p>"True Spirit" is an elegant fragrance that captures the essence of the modern woman. With its delicate blend of floral and woody notes, this perfume exudes confidence and femininity."</p>
     </div>
-    <!-- Add the body -->
-    <div class="body">
-      <div>
-        <h1>Create your Virtual Avatar<br></br> for Free</h1>
-        <button onclick="location.href = 'generate.html';">START</button>
-
-        <h2>Using cutting-edge AI technology, we are<br></br> able to generate your 3D model<br></br> in minutes.</h2>
+    <div class="testimonial" id="n2">
+      <img src="Perfum2.png" alt="Testimonial 2">
+      <h3 id="wh">Cursed Spirit</h3>
+      <p id="wh">"Cursed Spirit" is a seductive and alluring fragrance that embodies the mysterious and intriguing side of femininity."</p>
+    </div>
+    <div class="testimonial" id="n3">
+      <img src="Perfum.png" alt="Testimonial 3">
+      <h3>Angel Spirit</h3>
+      <p>"Angel Spirit" is a heavenly and ethereal fragrance that captures the divine and angelic side of femininity."</p>
+    </div>
+  </section>
+  <section class="pricing">
+    <h2>Choose the Fragance that fits you</h2>
+    <div class="pricing-options">
+      <div class="pricing-option">
+        <h3>True Spirit</h3>
+        <p class="price">$29</p>
+        <ul>
+          <li>Jasmine and Rose de Mai</li>
+          <li>Sandalwood and Patchouli</li>
+          <li>Ambergris</li>
+          <li>Base notes of Musk</li>
+        </ul>
+        <a href="#" class="button">Purchase</a>
       </div>
-      <div>
-        <img src="example.jpg" alt="Example avatar">
-        <svg width="1500" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M684.405 130.275C750.165 198.09 807.705 250.15 854.285 314.54C900.865 378.93 935.8 454.965 930.32 527.575C924.155 600.185 877.575 670.055 816.61 708.415C755.645 747.46 679.61 755.68 619.33 820.755C559.735 886.515 514.525 1009.82 449.45 1045.44C384.375 1080.37 298.75 1028.31 215.18 976.25C132.295 924.19 52.1499 871.445 46.6699 796.78C41.1899 722.8 110.375 626.9 94.6199 522.095C78.8649 417.29 -21.8301 302.895 4.88489 265.905C31.5999 228.23 186.41 267.275 285.05 218.64C383.69 169.32 426.845 32.32 485.755 5.60503C543.98 -21.11 617.96 62.46 684.405 130.275Z" fill="url(#paint0_linear_17_10)"/>
-<defs>
-<linearGradient id="paint0_linear_17_10" x1="4.26539e-06" y1="255.5" x2="685.5" y2="740" gradientUnits="userSpaceOnUse">
-<stop stop-color="#5521B6"/>
-<stop offset="1" stop-color="#F8BBED"/>
-</linearGradient>
-</defs>
-</svg>
-
+      <div class="pricing-option">
+        <h3>Cursed Spirit</h3>
+        <p class="price">$79</p>
+        <ul>
+          <li>Jasmine and Rose de Mai</li>
+          <li>Sandalwood and Patchouli</li>
+          <li>Ambergris</li>
+          <li>Base notes of Musk</li>
+        </ul>
+        <a href="#" class="button">Purchase</a>
+      </div>
+      <div class="pricing-option">
+        <h3>Angel Spirit</h3>
+        <p class="price">$299</p>
+        <ul>
+          <li>Jasmine and Rose de Mai</li>
+          <li>Sandalwood and Patchouli</li>
+          <li>Ambergris</li>
+          <li>Base notes of Musk</li>
+        </ul>
+        <a href="#" class="button">Purchase</a>
       </div>
     </div>
-  </body>
+  </section>
+  <section class="cta">
+    <div class="cta-text">
+      <h2>Start your free trial today</h2>
+      <p>Sign up for a free 14-day trial and try your self the Yves Saint Laurent Experience.</p>
+    </div>
+    <div class="cta-form">
+      <form>
+        <input type="email" placeholder="Enter your email">
+        <input type="submit" value="Start free trial">
+     </form>
+</div>
+    </section>
+</body>
 </html>
